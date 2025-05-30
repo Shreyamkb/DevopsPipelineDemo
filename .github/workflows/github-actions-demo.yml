@@ -1,0 +1,8 @@
+name: Only Print Actor
+on: [push]
+
+jobs:
+  print-name:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello from ${{ github.actor }} 👋"
